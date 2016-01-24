@@ -11,7 +11,10 @@ The **New** functions all return custom objects that serialize to/from 'json' wi
 
 ## Why
 
-I wanted to make cool network graphs with [netjsongraph.js](https://github.com/interop-dev/netjsongraph.js).
+I wanted to make cool network graphs with [netjsongraph.js](https://github.com/interop-dev/netjsongraph.js) like this:
+
+
+![network Map](NetworkMap.PNG)
 
 ## Usage
 
