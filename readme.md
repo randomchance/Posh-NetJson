@@ -60,11 +60,12 @@ $graph.links += New-NetGraphLink -Source 'router1' -Target 'pswitch' -Cost 0
 
 ### Export the graph 
 
-
+Export the Graph using the standard `ConvertTo-Json` cmdlet. 
+The only catch is you need to specify a depth of 5, as the the default depth will populate the properties objects with the type, not the actual object. 
+ 
 ```powershell
 
-$graph | ConvertTo-Json | Out-File -FilePath "netgraph.json"
-
+$graph | ConvertTo-Json -Depth 5 | Out-File -FilePath "netgraph.json"
 
 ```
 
