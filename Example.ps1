@@ -1,3 +1,7 @@
+
+Import-Module "$PSScriptRoot\Posh-NetJson.psm1"
+
+
 $graph = New-NetGraph -Static -label "My Network"
 
 $graph.nodes += New-NetGraphNode -ID 'router1' -Label "Router" -LocalAddresses @('10.10.10.1','10.10.11.1') -Properties @{gateway = $true}
